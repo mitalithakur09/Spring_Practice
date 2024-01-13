@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    <bean class="com.springcore.Student_Class" name="student1" p:student_id = "2434" p:student_name = "abc" p:student_class = "first" />
+    <bean class="com.springcore.Student_Class" name="student2" p:student_id = "2433" p:student_name = "def" p:student_class = "second" />
+    <bean class="com.springcore.Student_Class" name="student3" p:student_id = "2444" p:student_name = "ghi" p:student_class = "third" />
+    
+    <bean name="emp1" class="com.springcore.Employee">
+    <property name="name" value="abc"/>
+    <property name="phones">
+    <list>
+    <value>9876</value>
+    <value>9786</value>
+    <value>9867</value>
+    </list>
+    </property>
+    
+    <property name="address">
+    <set>
+    <value>Pune</value>
+    <value>Dewas</value>
+    <value>Mumbai</value>
+    </set>
+    </property>
+    
+    <property name="courses">
+    <map>
+    <entry key="Java" value="3months"/>
+    <entry key="JavaSpring" value="5months"/>
+    <entry key="JavaHibernate" value="1months"/>
+    </map>
+    </property>
+    </bean>
+    
+  </beans>
